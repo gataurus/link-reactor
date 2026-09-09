@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Refund Policy — Link Forge</title>
+    <title>Refund Policy — Link Reactor</title>
     <meta name="robots" content="noindex, nofollow">
     <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon-32x32.png">
     <link rel="icon" type="image/svg+xml" href="../../img/favicon.svg">
@@ -23,7 +23,7 @@
 <body>
     <header class="header">
         <div class="container">
-            <a href="../../" class="logo"><span class="logo-icon">⚒️</span><span class="logo-text">Link Forge</span></a>
+            <a href="../../" class="logo"><span class="logo-icon">⚒️</span><span class="logo-text">Link Reactor</span></a>
             <nav class="nav">
                 <div class="lang-switcher">
                     <select id="lang-select" onchange="switchLang(this.value)">
@@ -35,11 +35,11 @@
     </header>
 
     <div class="doc-content">
-        <a href="../../" class="back-link"><span data-lang-key="back">← Back to Link Forge</span></a>
+        <a href="../../" class="back-link"><span data-lang-key="back">← Back to Link Reactor</span></a>
         <h1 data-lang-key="title">Refund Policy</h1>
         
         <div class="lang-block active" data-lang="en">
-            <h2>1. Refund Period</h2><p>We offer a <strong>14-day money-back guarantee</strong> from the date of purchase. If you are not satisfied with Link Forge PRO for any reason, you may request a full refund within 14 days of your purchase.</p>
+            <h2>1. Refund Period</h2><p>We offer a <strong>14-day money-back guarantee</strong> from the date of purchase. If you are not satisfied with Link Reactor PRO for any reason, you may request a full refund within 14 days of your purchase.</p>
             <h2>2. How to Request a Refund</h2><p>To request a refund, please <a href="../contact">contact us</a> with your license key and the email address used for purchase.</p>
             <h2>3. Refund Processing</h2><p>Once approved, the refund will be processed within 7 business days. Upon refund, your license key will be permanently deactivated.</p>
             <h2>4. Exceptions</h2><p>Refunds are not available after the 14-day period has expired. Refunds are not available for license renewals.</p>
@@ -47,7 +47,7 @@
         </div>
         
         <div class="lang-block" data-lang="ru">
-            <h2>1. Срок возврата</h2><p>Мы предлагаем <strong>14-дневную гарантию возврата денег</strong> с даты покупки. Если вы не удовлетворены Link Forge PRO по любой причине, вы можете запросить полный возврат в течение 14 дней.</p>
+            <h2>1. Срок возврата</h2><p>Мы предлагаем <strong>14-дневную гарантию возврата денег</strong> с даты покупки. Если вы не удовлетворены Link Reactor PRO по любой причине, вы можете запросить полный возврат в течение 14 дней.</p>
             <h2>2. Как запросить возврат</h2><p>Для запроса возврата, пожалуйста, <a href="../contact">свяжитесь с нами</a>, указав лицензионный ключ и email, использованный при покупке.</p>
             <h2>3. Обработка возврата</h2><p>После одобрения возврат будет обработан в течение 7 рабочих дней. После возврата лицензионный ключ будет деактивирован.</p>
             <h2>4. Исключения</h2><p>Возвраты недоступны по истечении 14-дневного срока. Возвраты не производятся для продления лицензии.</p>
@@ -66,16 +66,16 @@
     
     <script>
         var DOC_LANG = {
-            en: { back: "← Back to Link Forge", title: "Refund Policy" },
-            ru: { back: "← Назад к Link Forge", title: "Политика возврата" },
-            de: { back: "← Zurück zu Link Forge", title: "Rückerstattungsrichtlinie" },
-            fr: { back: "← Retour à Link Forge", title: "Politique de remboursement" },
-            es: { back: "← Volver a Link Forge", title: "Política de reembolso" },
-            it: { back: "← Torna a Link Forge", title: "Politica di rimborso" },
-            zh: { back: "← 返回 Link Forge", title: "退款政策" },
-            ja: { back: "← Link Forgeに戻る", title: "返金ポリシー" },
-            pt: { back: "← Voltar ao Link Forge", title: "Política de Reembolso" },
-            ko: { back: "← Link Forge로 돌아가기", title: "환불 정책" }
+            en: { back: "← Back to Link Reactor", title: "Refund Policy" },
+            ru: { back: "← Назад к Link Reactor", title: "Политика возврата" },
+            de: { back: "← Zurück zu Link Reactor", title: "Rückerstattungsrichtlinie" },
+            fr: { back: "← Retour à Link Reactor", title: "Politique de remboursement" },
+            es: { back: "← Volver a Link Reactor", title: "Política de reembolso" },
+            it: { back: "← Torna a Link Reactor", title: "Politica di rimborso" },
+            zh: { back: "← 返回 Link Reactor", title: "退款政策" },
+            ja: { back: "← Link Reactorに戻る", title: "返金ポリシー" },
+            pt: { back: "← Voltar ao Link Reactor", title: "Política de Reembolso" },
+            ko: { back: "← Link Reactor로 돌아가기", title: "환불 정책" }
         };
         function switchLang(lang) {
             document.getElementById('lang-select').value = lang;
@@ -83,14 +83,14 @@
             var block = document.querySelector('.lang-block[data-lang="' + lang + '"]');
             if (block) block.classList.add('active');
             document.documentElement.lang = lang;
-            localStorage.setItem('forge_lang', lang);
+            localStorage.setItem('reactor_lang', lang);
             if (DOC_LANG[lang]) {
                 document.querySelector('[data-lang-key="back"]').textContent = DOC_LANG[lang].back;
                 document.querySelector('[data-lang-key="title"]').textContent = DOC_LANG[lang].title;
             }
         }
         (function() {
-            var saved = localStorage.getItem('forge_lang');
+            var saved = localStorage.getItem('reactor_lang');
             var browserLang = (navigator.language || 'en').substring(0, 2);
             var supported = ['en','ru','de','fr','es','it','zh','ja','pt','ko'];
             var lang = saved || (supported.indexOf(browserLang) !== -1 ? browserLang : 'en');
