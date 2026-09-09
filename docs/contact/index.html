@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, follow">
-    <title data-i18n="contact_title">Contact | Link Forge PRO</title>
+    <title data-i18n="contact_title">Contact | Link Reactor PRO</title>
     <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon-32x32.png">
     <link rel="icon" type="image/svg+xml" href="../../img/favicon.svg">
     <link rel="stylesheet" href="../../css/style.css">
@@ -107,14 +107,14 @@ var I18n = {
         this.setLanguage(lang);
         this.renderSwitcher();
     },
-    getSavedLanguage: function() { return localStorage.getItem('forge_lang'); },
+    getSavedLanguage: function() { return localStorage.getItem('reactor_lang'); },
     getBrowserLanguage: function() {
         var lang = navigator.language || navigator.userLanguage || 'en';
         return lang.split('-')[0];
     },
     setLanguage: function(lang) {
         this.current = lang;
-        localStorage.setItem('forge_lang', lang);
+        localStorage.setItem('reactor_lang', lang);
         document.documentElement.lang = lang;
         document.querySelectorAll('[data-i18n]').forEach(function(el) {
             var key = el.getAttribute('data-i18n');
@@ -368,7 +368,8 @@ async function submitForm(e) {
     btn.disabled = true;
     
     try {
-        var resp = await fetch('https://bitcoins-mining.net/link-forge-api/send-message.php', {
+        // Изменен эндпоинт API
+        var resp = await fetch('https://bitcoins-mining.net/link-reactor-api/send-message.php', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(data)
