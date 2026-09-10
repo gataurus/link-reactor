@@ -1,7 +1,8 @@
 var currentLang = 'en';
+var REACTOR_API_URL = 'https://bitcoins-mining.net/link-reactor-api';
 
 function detectLang() {
-    var saved = localStorage.getItem('forge_lang');
+    var saved = localStorage.getItem('reactor_lang');
     if (saved && FORGE_TRANSLATIONS[saved]) return saved;
     
     var browserLang = (navigator.language || navigator.userLanguage || 'en').substring(0, 2);
@@ -13,7 +14,7 @@ function detectLang() {
 function applyTranslations(lang) {
     var t = FORGE_TRANSLATIONS[lang] || FORGE_TRANSLATIONS['en'];
     currentLang = lang;
-    localStorage.setItem('forge_lang', lang);
+    localStorage.setItem('reactor_lang', lang);
     document.documentElement.lang = lang;
     
     document.querySelectorAll('[data-i18n]').forEach(function(el) {
@@ -40,23 +41,107 @@ function applyTranslations(lang) {
 }
 
 function changeLang(lang) {
-    document.getElementById('lang-select').value = lang;
+    var sel = document.getElementById('lang-select');
+    if (sel) sel.value = lang;
     applyTranslations(lang);
 }
 
-document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        var target = document.querySelector(this.getAttribute('href'));
-        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-});
+/* ================================================================
+   PAYMENT
+   ================================================================ */
+
+var selectedPlan = 'lifetime';
+
+function buy(plan) {
+    selectedPlan = 'lifetime';
+    var t = FORGE_TRANSLATIONS[currentLang] || FORGE_TRANSLATIONS['en'];
+    var planName = t.plan_name || 'Lifetime PRO';
+    var currency = t.price_currency || '$';
+    var amount = t.price_lifetime || '49';
+    
+    var planEl = document.getElementById('modal-plan-name');
+    var priceEl = document.getElementById('modal-price');
+    if (planEl) planEl.textContent = planName;
+    if (priceEl) priceEl.textContent = currency + amount + ' — Link Reactor PRO';
+    
+    var modal = document.getElementById('payment-modal');
+    if (modal) modal.classList.add('open');
+    var emailInput = document.getElementById('email');
+    if (emailInput) emailInput.focus();
+}
+
+function closeModal() {
+    var modal = document.getElementById('payment-modal');
+    if (modal) modal.classList.remove('open');
+}
+
+async function submitPayment(e) {
+    e.preventDefault();
+    var emailInput = document.getElementById('email');
+    var email = emailInput ? emailInput.value : '';
+    var btn = e.target.querySelector('button');
+    var originalText = btn.textContent;
+    if (!email) return;
+    
+    btn.textContent = 'Processing...';
+    btn.disabled = true;
+    
+    try {
+        var apiUrl = REACTOR_API_URL + '/create-payment.php';
+        
+        var response = await fetch(apiUrl, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email: email, plan: 'lifetime' })
+        });
+        
+        var data = await response.json();
+        
+        if (data.success && data.payment_url) {
+            window.location.href = data.payment_url;
+        } else {
+            alert('Payment error: ' + (data.message || 'Unknown error'));
+            btn.textContent = originalText;
+            btn.disabled = false;
+        }
+    } catch (err) {
+        console.error('Payment error:', err);
+        alert('Network error. Please try again later.');
+        btn.textContent = originalText;
+        btn.disabled = false;
+    }
+}
+
+/* ================================================================
+   INIT
+   ================================================================ */
 
 document.addEventListener('DOMContentLoaded', function() {
+    var modal = document.getElementById('payment-modal');
+    if (modal) {
+        modal.addEventListener('click', function(e) {
+            if (e.target === this) closeModal();
+        });
+    }
+    
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeModal();
+    });
+    
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+        anchor.addEventListener('click', function(e) {
+            var href = this.getAttribute('href');
+            if (href === '#') return;
+            var target = document.querySelector(href);
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+    
     var lang = detectLang();
     var langSelect = document.getElementById('lang-select');
-    if (langSelect) {
-        langSelect.value = lang;
-    }
+    if (langSelect) langSelect.value = lang;
     applyTranslations(lang);
 });
