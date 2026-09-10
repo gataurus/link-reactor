@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Link Reactor — WordPress Plugin</title>
-    <meta name="description" content="Fuel your links. Power your shortcodes. Professional link management and shortcode plugin for WordPress. Redirect, track, and manage URLs.">
+    <meta name="description" content="Fuel your links. Power your shortcodes. Professional link management and shortcode plugin for WordPress. Redirect, track, cloak URLs, and embed code snippets.">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
     <link rel="apple-touch-icon" sizes="512x512" href="img/icon-512x512.png">
     <link rel="manifest" href="site.webmanifest">
-    <meta name="theme-color" content="#1a0a00">
+    <meta name="theme-color" content="#1c1917">
     <meta name="msapplication-TileColor" content="#f97316">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -26,6 +26,7 @@
             <nav class="nav">
                 <a href="#how-it-works" data-i18n="nav_how">How It Works</a>
                 <a href="#features" data-i18n="nav_features">Features</a>
+                <a href="#pricing" data-i18n="nav_pricing">Pricing</a>
                 <a href="#faq" data-i18n="nav_faq">FAQ</a>
                 <div class="lang-switcher">
                     <select id="lang-select" onchange="changeLang(this.value)">
@@ -46,40 +47,40 @@
     </header>
 
     <section class="hero">
-    <div class="container">
-        <div class="hero-content">
-            <span class="hero-badge" data-i18n="hero_badge">100% Free WordPress Plugin</span>
-            <h1 data-i18n="hero_title">Fuel your links. Power your shortcodes.</h1>
-            
-            <div class="hero-visual">
-                <div class="hero-icon-bg">
-                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <radialGradient id="glow" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:#f97316;stop-opacity:0.4"/>
-                                <stop offset="100%" style="stop-color:#f97316;stop-opacity:0"/>
-                            </radialGradient>
-                        </defs>
-                        <circle cx="50" cy="50" r="30" fill="url(#glow)"/>
-                        <circle cx="50" cy="50" r="6" fill="#f97316"/>
-                        <ellipse cx="50" cy="50" rx="38" ry="15" stroke="#f97316" stroke-width="1.5" transform="rotate(0 50 50)"/>
-                        <ellipse cx="50" cy="50" rx="38" ry="15" stroke="#fb923c" stroke-width="1.5" transform="rotate(60 50 50)"/>
-                        <ellipse cx="50" cy="50" rx="38" ry="15" stroke="#f97316" stroke-width="1.5" transform="rotate(120 50 50)"/>
-                        <circle cx="88" cy="50" r="3.5" fill="#fb923c"/>
-                        <circle cx="50" cy="12" r="3.5" fill="#f97316"/>
-                        <circle cx="12" cy="50" r="3.5" fill="#fb923c"/>
-                    </svg>
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge" data-i18n="hero_badge">WordPress Plugin</span>
+                <h1 data-i18n="hero_title">Professional Link Management for WordPress</h1>
+                
+                <div class="hero-visual">
+                    <div class="hero-icon-bg">
+                        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+                                    <stop offset="0%" style="stop-color:#f97316;stop-opacity:0.4"/>
+                                    <stop offset="100%" style="stop-color:#f97316;stop-opacity:0"/>
+                                </radialGradient>
+                            </defs>
+                            <circle cx="50" cy="50" r="30" fill="url(#glow)"/>
+                            <circle cx="50" cy="50" r="6" fill="#f97316"/>
+                            <ellipse cx="50" cy="50" rx="38" ry="15" stroke="#f97316" stroke-width="1.5" transform="rotate(0 50 50)"/>
+                            <ellipse cx="50" cy="50" rx="38" ry="15" stroke="#fb923c" stroke-width="1.5" transform="rotate(60 50 50)"/>
+                            <ellipse cx="50" cy="50" rx="38" ry="15" stroke="#f97316" stroke-width="1.5" transform="rotate(120 50 50)"/>
+                            <circle cx="88" cy="50" r="3.5" fill="#fb923c"/>
+                            <circle cx="50" cy="12" r="3.5" fill="#f97316"/>
+                            <circle cx="12" cy="50" r="3.5" fill="#fb923c"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <p data-i18n="hero_desc">Create short, memorable links. Track every click. Protect with passwords. Embed custom code. All from one clean dashboard.</p>
+                <div class="hero-buttons">
+                    <a href="#pricing" class="btn btn-primary btn-lg" data-i18n="hero_cta">Get PRO Now</a>
+                    <a href="https://wordpress.org/plugins/link-reactor" target="_blank" class="btn btn-outline btn-lg" data-i18n="hero_free">Try Free Version</a>
                 </div>
             </div>
-
-            <p data-i18n="hero_desc">Create short, memorable links. Track every click. Embed custom code. All from one clean dashboard. No premium tiers. No limitations.</p>
-            <div class="hero-buttons">
-                <a href="https://wordpress.org/plugins/link-reactor" target="_blank" class="btn btn-primary btn-lg" data-i18n="hero_cta">Download Free</a>
-                <a href="https://github.com/gataurus/link-reactor/releases" target="_blank" class="btn btn-outline btn-lg" data-i18n="hero_github">View on GitHub</a>
-            </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <section id="how-it-works" class="how-it-works">
         <div class="container">
@@ -92,7 +93,7 @@
                     <div class="how-icon">🔗</div>
                     <div class="how-content">
                         <h3 data-i18n="how_links_title">Link Management</h3>
-                        <p data-i18n="how_links_desc">You have a long, ugly affiliate link or a complicated URL. Link Reactor creates a short, clean version on your own domain. When someone clicks it, they're instantly redirected. Track clicks or disable anytime — with or without a prefix.</p>
+                        <p data-i18n="how_links_desc">You have a long, ugly affiliate link or a complicated URL. Link Reactor creates a short, clean version on your own domain. When someone clicks it, they're instantly redirected. Track clicks, protect with a password, or disable anytime — with or without a prefix.</p>
                         <div class="how-example">
                             <span class="how-code full">https://shop.com/ref?id=123&utm=abc</span>
                             <span class="how-arrow">→</span>
@@ -126,13 +127,75 @@
             <div class="features-grid">
                 <div class="feature-card"><span class="feature-icon">🔄</span><h3 data-i18n="feature_1_title">Smart Redirects</h3><p data-i18n="feature_1_desc">301, 302, or 307 redirects with custom prefixes per link. Remove prefix entirely for short clean URLs.</p></div>
                 <div class="feature-card"><span class="feature-icon">📊</span><h3 data-i18n="feature_2_title">Click Tracking</h3><p data-i18n="feature_2_desc">Every click logged: time, IP, browser, device, referrer. View counters in dashboard.</p></div>
-                <div class="feature-card"><span class="feature-icon">🧱</span><h3 data-i18n="feature_3_title">Shortcode Blocks</h3><p data-i18n="feature_3_desc">Store HTML/JS/CSS snippets. Insert anywhere via shortcode or editor button.</p></div>
-                <div class="feature-card"><span class="feature-icon">🔍</span><h3 data-i18n="feature_4_title">Live Search & Editor</h3><p data-i18n="feature_4_desc">Instant search across links and shortcodes. Insert with one click from the post editor.</p></div>
-                <div class="feature-card"><span class="feature-icon">📥</span><h3 data-i18n="feature_5_title">CSV Import/Export</h3><p data-i18n="feature_5_desc">Import and export links and shortcodes with auto-backup. Batch edit included.</p></div>
-                <div class="feature-card"><span class="feature-icon">🌍</span><h3 data-i18n="feature_6_title">10 Languages</h3><p data-i18n="feature_6_desc">Interface in 10 languages with auto-detection.</p></div>
-                <div class="feature-card"><span class="feature-icon">🎨</span><h3 data-i18n="feature_7_title">Modern UI</h3><p data-i18n="feature_7_desc">Clean, responsive dashboard with infinite scroll and real-time filtering.</p></div>
-                <div class="feature-card"><span class="feature-icon">🖊️</span><h3 data-i18n="feature_8_title">Editor Button</h3><p data-i18n="feature_8_desc">Insert shortcodes or links directly from the WordPress editor toolbar. Browse, search, click to insert.</p></div>
-                <div class="feature-card"><span class="feature-icon">✏️</span><h3 data-i18n="feature_9_title">Batch Operations</h3><p data-i18n="feature_9_desc">Edit multiple links at once. Change categories, toggle status, or delete in bulk.</p></div>
+                <div class="feature-card"><span class="feature-icon">🔒</span><h3 data-i18n="feature_3_title">Password Protection</h3><p data-i18n="feature_3_desc">Protect links with a password. Clean password page before redirect. PRO feature.</p></div>
+                <div class="feature-card"><span class="feature-icon">🧱</span><h3 data-i18n="feature_4_title">Shortcode Blocks</h3><p data-i18n="feature_4_desc">Store HTML/JS/CSS snippets. Insert anywhere via shortcode or editor button.</p></div>
+                <div class="feature-card"><span class="feature-icon">🔍</span><h3 data-i18n="feature_5_title">Live Search & Editor</h3><p data-i18n="feature_5_desc">Instant search across links and shortcodes. Insert with one click from the post editor.</p></div>
+                <div class="feature-card"><span class="feature-icon">📋</span><h3 data-i18n="feature_6_title">Batch Operations</h3><p data-i18n="feature_6_desc">Edit multiple links at once. CSV import/export with auto-backup. PRO feature.</p></div>
+                <div class="feature-card"><span class="feature-icon">🌍</span><h3 data-i18n="feature_7_title">10 Languages</h3><p data-i18n="feature_7_desc">Interface in 10 languages with auto-detection.</p></div>
+                <div class="feature-card"><span class="feature-icon">🎨</span><h3 data-i18n="feature_8_title">Modern UI</h3><p data-i18n="feature_8_desc">Clean, responsive dashboard with infinite scroll and real-time filtering.</p></div>
+                <div class="feature-card"><span class="feature-icon">🖊️</span><h3 data-i18n="feature_9_title">Editor Button</h3><p data-i18n="feature_9_desc">Insert shortcodes or reactor links directly from the WordPress editor toolbar. Browse, search, click to insert.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="pricing_title">One Payment. Full Access. Forever.</h2>
+                <p class="section-subtitle" data-i18n="pricing_subtitle">No subscriptions. No hidden fees.</p>
+            </div>
+
+            <div class="pricing-wrapper">
+                <div class="pricing-card-single">
+                    <div class="pricing-card-single-inner">
+                        <div class="pricing-badge" data-i18n="badge_best">⚡ Best Value</div>
+
+                        <div class="pricing-header">
+                            <span class="pricing-icon">⚛️</span>
+                            <h3 data-i18n="plan_name">Lifetime PRO</h3>
+                            <p class="pricing-sub" data-i18n="plan_desc">Pay once — all future updates free.</p>
+                        </div>
+
+                        <div class="pricing-amount">
+                            <span class="pricing-currency" data-i18n="price_currency">$</span>
+                            <span class="pricing-number" data-i18n="price_lifetime">49</span>
+                            <span class="pricing-period" data-i18n="price_period">/ forever</span>
+                        </div>
+
+                        <div class="pricing-features-grid">
+                            <div class="pricing-feature"><span class="pricing-feature-icon">✓</span><span data-i18n="p_feat_unlim_links">Unlimited links</span></div>
+                            <div class="pricing-feature"><span class="pricing-feature-icon">✓</span><span data-i18n="p_feat_unlim_blocks">Unlimited shortcodes</span></div>
+                            <div class="pricing-feature"><span class="pricing-feature-icon">✓</span><span data-i18n="p_feat_batch">Batch editing</span></div>
+                            <div class="pricing-feature"><span class="pricing-feature-icon">✓</span><span data-i18n="p_feat_csv">CSV import & export</span></div>
+                            <div class="pricing-feature"><span class="pricing-feature-icon">✓</span><span data-i18n="p_feat_pass">Password protection</span></div>
+                            <div class="pricing-feature"><span class="pricing-feature-icon">✓</span><span data-i18n="p_feat_lifetime">Lifetime updates & support</span></div>
+                        </div>
+
+                        <button class="btn btn-primary btn-hero" onclick="buy('lifetime')" data-i18n="btn_buy">Get PRO Now →</button>
+
+                        <div class="pricing-guarantee-single">
+                            <p class="modal-secure" data-i18n="modal_secure">🔒 Secure payment • 14-day money-back guarantee</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-comparison">
+                <div class="pricing-comp-item">
+                    <span class="pricing-comp-label" data-i18n="comp_free">Free</span>
+                    <div class="pricing-comp-bar">
+                        <div class="pricing-comp-fill" style="width: 50%;"></div>
+                    </div>
+                    <span class="pricing-comp-value" data-i18n="comp_50">50%</span>
+                </div>
+                <div class="pricing-comp-item">
+                    <span class="pricing-comp-label" data-i18n="comp_pro">PRO</span>
+                    <div class="pricing-comp-bar">
+                        <div class="pricing-comp-fill" style="width: 100%; background: #f97316;"></div>
+                    </div>
+                    <span class="pricing-comp-value" data-i18n="comp_100">100%</span>
+                </div>
+                <p class="pricing-comp-note" data-i18n="p_feat_free_note">Free version includes: Unlimited links, full click tracking, live search & editor</p>
             </div>
         </div>
     </section>
@@ -143,12 +206,14 @@
                 <h2 data-i18n="faq_title">Frequently Asked Questions</h2>
             </div>
             <div class="faq-grid">
-                <details><summary data-i18n="faq_1_q">Is Link Reactor really free?</summary><p data-i18n="faq_1_a">Yes! Link Reactor is 100% free and open source. There are no premium features, no upsells, and no limitations. Create unlimited links and shortcodes without any restrictions.</p></details>
-                <details><summary data-i18n="faq_2_q">How do links work?</summary><p data-i18n="faq_2_a">You create a key (like "sale") and a target URL. The plugin creates yoursite.com/go/sale — anyone who visits it is redirected. Track clicks or disable anytime.</p></details>
-                <details><summary data-i18n="faq_3_q">Can I remove the /go/ prefix?</summary><p data-i18n="faq_3_a">Yes! You can set a custom global prefix (or none) in Settings. You can also override it for each individual link.</p></details>
-                <details><summary data-i18n="faq_4_q">How do shortcodes work?</summary><p data-i18n="faq_4_a">Create a block with a title and your code. Use [forge block="title"] in any post or page. Edit once — changes everywhere. Or use the editor button for one-click insertion.</p></details>
-                <details><summary data-i18n="faq_5_q">Does this work with caching plugins?</summary><p data-i18n="faq_5_a">Yes, Link Reactor is compatible with most caching plugins. Redirects are handled at the WordPress level before caching.</p></details>
-                <details><summary data-i18n="faq_6_q">Is my data secure?</summary><p data-i18n="faq_6_a">All data is stored in your WordPress database. No external services are used for redirects or tracking.</p></details>
+                <details><summary data-i18n="faq_1_q">How do I activate PRO?</summary><p data-i18n="faq_1_a">After purchase, you'll receive a license key by email. Go to WordPress admin → Link Reactor → Settings, paste the key, click Activate. Done.</p></details>
+                <details><summary data-i18n="faq_2_q">I didn't receive my license key?</summary><p data-i18n-html="faq_2_a">The email is sent immediately after payment. Please check your spam/junk folder first. If it's not there, <a href='docs/contact/'>contact us</a> and we'll resend it within 24 hours.</p></details>
+                <details><summary data-i18n="faq_3_q">Can I upgrade later?</summary><p data-i18n="faq_3_a">We have only one plan — Lifetime PRO. No upgrades needed.</p></details>
+                <details><summary data-i18n="faq_4_q">One license per site?</summary><p data-i18n="faq_4_a">Yes, one license = one domain. Need more sites? Buy additional licenses.</p></details>
+                <details><summary data-i18n="faq_5_q">How do links work?</summary><p data-i18n="faq_5_a">You create a key (like "sale") and a target URL. The plugin creates yoursite.com/go/sale — anyone who visits it is redirected. Track clicks or protect with a password.</p></details>
+                <details><summary data-i18n="faq_6_q">How do shortcodes work?</summary><p data-i18n="faq_6_a">Create a block with a title and your code. Use [reactor block="title"] in any post or page. Edit once — changes everywhere. Or use the editor button for one-click insertion.</p></details>
+                <details><summary data-i18n="faq_7_q">What happens when license expires?</summary><p data-i18n="faq_7_a">We don't have subscriptions. License is valid forever. Pay once, use forever.</p></details>
+                <details><summary data-i18n="faq_8_q">Do you offer refunds?</summary><p data-i18n-html="faq_8_a">Yes, 14-day money-back guarantee. <a href='docs/contact/'>Contact us</a> — we'll refund, no questions asked.</p></details>
             </div>
         </div>
     </section>
@@ -157,16 +222,33 @@
         <div class="container">
             <h2 data-i18n="cta_title">Ready to Get Started?</h2>
             <p data-i18n="cta_desc">Join WordPress users who manage their links professionally with Link Reactor.</p>
-            <a target="_blank" href="https://wordpress.org/plugins/link-reactor" class="btn btn-primary btn-lg" data-i18n="cta_btn">Download Free</a>
+            <a href="#pricing" class="btn btn-primary btn-lg" data-i18n="cta_btn">Get PRO Now</a>
         </div>
     </section>
+
+    <div id="payment-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <h2 data-i18n="modal_title">Complete Your Purchase</h2>
+            <p id="modal-plan-name"></p>
+            <p id="modal-price"></p>
+            <form id="payment-form" onsubmit="submitPayment(event)">
+                <label for="email" data-i18n="modal_email">Email for license key delivery</label>
+                <input type="email" id="email" required placeholder="your@email.com">
+                <button type="submit" class="btn btn-primary btn-block" data-i18n="modal_pay">Pay with Card</button>
+            </form>
+            <p class="modal-secure" data-i18n="modal_secure">🔒 Secure payment • 14-day money-back guarantee</p>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="container">
             <p>© 2026 Link Reactor</p>
             <div class="footer-links">
-                <a target="_blank" href="https://github.com/gataurus/link-reactor/releases" data-i18n="footer_github">GitHub</a>
-                <a target="_blank" href="https://wordpress.org/plugins/link-reactor" data-i18n="footer_wp">WordPress.org</a>
+                <a href="docs/privacy/" data-i18n="footer_privacy">Privacy</a>
+                <a href="docs/offer/" data-i18n="footer_terms">Terms</a>
+                <a href="docs/refund/" data-i18n="footer_refund">Refund</a>
+                <a href="docs/contact/" data-i18n="footer_support">Support</a>
             </div>
         </div>
     </footer>
