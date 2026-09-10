@@ -927,3 +927,360 @@ body {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
 }
+
+/* ================================================================
+   PRICING
+   ================================================================ */
+
+.pricing {
+    padding: 80px 0;
+    background: var(--surface);
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(249, 115, 22, 0.04), transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.pricing-wrapper {
+    max-width: 720px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.pricing-card-single {
+    background: linear-gradient(180deg, var(--bg) 0%, var(--surface2) 100%);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 48px 56px;
+    transition: all var(--transition);
+    position: relative;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+}
+
+.pricing-card-single:hover {
+    border-color: var(--orange);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 60px rgba(249, 115, 22, 0.08);
+}
+
+.pricing-card-single::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--orange), transparent);
+    opacity: 0.3;
+}
+
+.pricing-card-single-inner {
+    text-align: center;
+}
+
+.pricing-badge {
+    display: inline-block;
+    background: var(--orange);
+    color: #fff;
+    padding: 6px 20px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+.pricing-header {
+    margin-bottom: 28px;
+}
+
+.pricing-icon {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.pricing-header h3 {
+    font-size: 1.8em;
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 4px;
+    letter-spacing: -0.5px;
+}
+
+.pricing-sub {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.pricing-amount {
+    margin-bottom: 32px;
+    padding: 20px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.pricing-currency {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: var(--orange);
+    vertical-align: top;
+    line-height: 1.2;
+}
+
+.pricing-number {
+    font-size: 4em;
+    font-weight: 900;
+    color: var(--text);
+    letter-spacing: -2px;
+    line-height: 1;
+}
+
+.pricing-period {
+    font-size: 1em;
+    color: var(--text-muted);
+    font-weight: 500;
+    margin-left: 4px;
+}
+
+.pricing-features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px 20px;
+    margin-bottom: 32px;
+    text-align: left;
+}
+
+.pricing-feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.pricing-feature-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    background: var(--orange-bg);
+    color: var(--orange);
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.pricing-guarantee-single {
+    margin-top: 16px;
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.pricing-guarantee-single span {
+    margin-right: 4px;
+}
+
+.pricing-comparison {
+    max-width: 640px;
+    margin: 32px auto 0;
+    padding: 24px 28px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.pricing-comp-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 6px 0;
+}
+
+.pricing-comp-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    min-width: 44px;
+}
+
+.pricing-comp-bar {
+    flex: 1;
+    height: 6px;
+    background: var(--surface2);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.pricing-comp-fill {
+    height: 100%;
+    border-radius: 4px;
+    background: var(--text-muted);
+    transition: width 0.6s ease;
+}
+
+.pricing-comp-value {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted);
+    min-width: 36px;
+    text-align: right;
+}
+
+.pricing-comp-note {
+    margin-top: 10px;
+    font-size: 12px;
+    color: var(--text-muted);
+    text-align: center;
+    border-top: 1px solid var(--border);
+    padding-top: 10px;
+}
+
+/* ================================================================
+   MODAL
+   ================================================================ */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-content {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 32px;
+    max-width: 420px;
+    width: 90%;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.modal-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-size: 22px;
+    cursor: pointer;
+    color: var(--text-muted);
+    background: none;
+    border: none;
+    transition: color var(--transition);
+}
+
+.modal-close:hover {
+    color: var(--text);
+}
+
+.modal-content h2 {
+    font-size: 1.3em;
+    margin-bottom: 6px;
+}
+
+.modal-content p {
+    color: var(--text-secondary);
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+
+.modal-content label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: var(--text);
+    text-align: left;
+}
+
+.modal-content input[type="email"] {
+    width: 100%;
+    padding: 10px 14px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    font-size: 14px;
+    margin-bottom: 14px;
+    outline: none;
+    transition: border-color var(--transition);
+}
+
+.modal-content input[type="email"]:focus {
+    border-color: var(--orange);
+}
+
+.modal-secure {
+    margin-top: 10px;
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+/* ================================================================
+   PRICING & MODAL — RESPONSIVE
+   ================================================================ */
+
+@media (max-width: 768px) {
+    .pricing-card-single {
+        padding: 32px 24px 28px;
+    }
+    .pricing-number {
+        font-size: 3em;
+    }
+    .pricing-features-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 4px 16px;
+    }
+    .pricing-comparison {
+        padding: 16px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pricing-card-single {
+        padding: 24px 16px 20px;
+    }
+    .pricing-number {
+        font-size: 2.4em;
+    }
+    .pricing-currency {
+        font-size: 1.2em;
+    }
+    .pricing-features-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .pricing-feature {
+        font-size: 13px;
+        padding: 4px 0;
+    }
+}
