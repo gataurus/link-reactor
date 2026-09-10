@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, follow">
-    <title data-i18n="contact_title">Contact | Link Reactor PRO</title>
+    <title data-i18n="contact_title">Contact | Link Reactor</title>
     <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon-32x32.png">
     <link rel="icon" type="image/svg+xml" href="../../img/favicon.svg">
     <link rel="stylesheet" href="../../css/style.css">
@@ -368,7 +368,6 @@ async function submitForm(e) {
     btn.disabled = true;
     
     try {
-        // Изменен эндпоинт API
         var resp = await fetch('https://bitcoins-mining.net/link-reactor-api/send-message.php', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
