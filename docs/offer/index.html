@@ -15,15 +15,23 @@
         .doc-content p, .doc-content li { color: var(--text-secondary); margin-bottom: 10px; line-height: 1.7; font-size: 14px; }
         .doc-content ul { padding-left: 20px; margin-bottom: 16px; }
         .doc-content a { color: var(--orange); text-decoration: none; }
+        .doc-content a:hover { text-decoration: underline; }
         .lang-block { display: none; }
         .lang-block.active { display: block; }
         .back-link { display: inline-block; margin-bottom: 20px; color: var(--orange); text-decoration: none; font-size: 14px; }
+        .back-link:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <a href="../../" class="logo"><span class="logo-icon">⚒️</span><span class="logo-text">Link Reactor</span></a>
+            <a href="../../" class="logo">
+                <svg width="24" height="24" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M55 10 L25 55 L45 55 L40 90 L75 45 L55 45 Z" fill="#f97316"/>
+                    <circle cx="50" cy="50" r="35" stroke="#f97316" stroke-width="2" opacity="0.3"/>
+                </svg>
+                <span class="logo-text">Link Reactor</span>
+            </a>
             <nav class="nav">
                 <div class="lang-switcher">
                     <select id="lang-select" onchange="switchLang(this.value)">
@@ -58,7 +66,7 @@
                 INN: 560602967189<br>
                 OGRNIP: 326710000037559<br><br>
                 <strong>Contact</strong><br>
-                <a href="../contact">Contact form</a>
+                <a href="../contact/">Contact form</a>
             </p>
         </div>
         
@@ -82,7 +90,7 @@
                 ИНН: 560602967189<br>
                 ОГРНИП: 326710000037559<br><br>
                 <strong>Контакты</strong><br>
-                <a href="../contact">Форма обратной связи</a>
+                <a href="../contact/">Форма обратной связи</a>
             </p>
         </div>
         
@@ -100,7 +108,7 @@
                 INN: 560602967189<br>
                 OGRNIP: 326710000037559<br><br>
                 <strong>Kontakt</strong><br>
-                <a href="../contact">Kontaktformular</a>
+                <a href="../contact/">Kontaktformular</a>
             </p>
         </div>
         
@@ -118,7 +126,7 @@
                 INN: 560602967189<br>
                 OGRNIP: 326710000037559<br><br>
                 <strong>Contact</strong><br>
-                <a href="../contact">Formulaire de contact</a>
+                <a href="../contact/">Formulaire de contact</a>
             </p>
         </div>
         
@@ -136,7 +144,7 @@
                 INN: 560602967189<br>
                 OGRNIP: 326710000037559<br><br>
                 <strong>Contacto</strong><br>
-                <a href="../contact">Formulario de contacto</a>
+                <a href="../contact/">Formulario de contacto</a>
             </p>
         </div>
         
@@ -154,7 +162,7 @@
                 INN: 560602967189<br>
                 OGRNIP: 326710000037559<br><br>
                 <strong>Contatto</strong><br>
-                <a href="../contact">Modulo di contatto</a>
+                <a href="../contact/">Modulo di contatto</a>
             </p>
         </div>
         
@@ -172,7 +180,7 @@
                 INN: 560602967189<br>
                 OGRNIP: 326710000037559<br><br>
                 <strong>联系方式</strong><br>
-                <a href="../contact">联系表单</a>
+                <a href="../contact/">联系表单</a>
             </p>
         </div>
         
@@ -190,7 +198,7 @@
                 INN: 560602967189<br>
                 OGRNIP: 326710000037559<br><br>
                 <strong>お問い合わせ</strong><br>
-                <a href="../contact">お問い合わせフォーム</a>
+                <a href="../contact/">お問い合わせフォーム</a>
             </p>
         </div>
         
@@ -208,7 +216,7 @@
                 INN: 560602967189<br>
                 OGRNIP: 326710000037559<br><br>
                 <strong>Contato</strong><br>
-                <a href="../contact">Formulário de contato</a>
+                <a href="../contact/">Formulário de contato</a>
             </p>
         </div>
         
@@ -226,7 +234,7 @@
                 INN: 560602967189<br>
                 OGRNIP: 326710000037559<br><br>
                 <strong>연락처</strong><br>
-                <a href="../contact">문의 양식</a>
+                <a href="../contact/">문의 양식</a>
             </p>
         </div>
     </div>
@@ -245,15 +253,18 @@
             ko: { back: "← Link Reactor로 돌아가기", title: "공개 제안" }
         };
         function switchLang(lang) {
-            document.getElementById('lang-select').value = lang;
+            var sel = document.getElementById('lang-select');
+            if (sel) sel.value = lang;
             document.querySelectorAll('.lang-block').forEach(function(b) { b.classList.remove('active'); });
             var block = document.querySelector('.lang-block[data-lang="' + lang + '"]');
             if (block) block.classList.add('active');
             document.documentElement.lang = lang;
             localStorage.setItem('reactor_lang', lang);
+            var backEl = document.querySelector('[data-lang-key="back"]');
+            var titleEl = document.querySelector('[data-lang-key="title"]');
             if (DOC_LANG[lang]) {
-                document.querySelector('[data-lang-key="back"]').textContent = DOC_LANG[lang].back;
-                document.querySelector('[data-lang-key="title"]').textContent = DOC_LANG[lang].title;
+                if (backEl) backEl.textContent = DOC_LANG[lang].back;
+                if (titleEl) titleEl.textContent = DOC_LANG[lang].title;
             }
         }
         (function() {
