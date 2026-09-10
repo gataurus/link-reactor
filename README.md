@@ -13,7 +13,9 @@
 
 ## 🔗 What is Link Reactor?
 
-Link Reactor is a comprehensive WordPress plugin for managing redirect links and shortcode blocks. Create clean, trackable links, cloak affiliate URLs, and embed custom code snippets with an intuitive modern interface. Completely free and open source.
+Link Reactor is a comprehensive WordPress plugin for managing redirect links and shortcode blocks. Create clean, trackable links, cloak affiliate URLs, and embed custom code snippets with an intuitive modern interface.
+
+**Free version** available on WordPress.org. **PRO version** unlocks password protection, batch operations, CSV import/export, and lifetime updates.
 
 ---
 
@@ -22,7 +24,9 @@ Link Reactor is a comprehensive WordPress plugin for managing redirect links and
 ### Link Management
 - 🔄 301, 302, 307 redirects
 - 🎯 Custom URL prefixes per link
-- 📊 Click tracking with counter
+- 📊 Click tracking with counter and detailed logs (IP, user-agent, referrer)
+- 📋 Bulk actions (delete, toggle, change category) — **PRO**
+- 🔒 Password protection for links — **PRO**
 - 🔍 Live search and category filtering
 - 📱 Responsive management table with infinite scroll
 
@@ -35,21 +39,30 @@ Link Reactor is a comprehensive WordPress plugin for managing redirect links and
 
 ### Internationalization
 - 🌍 10 Languages supported
-- 🇺🇸 English
-- 🇷🇺 Russian
-- 🇩🇪 German
-- 🇫🇷 French
-- 🇪🇸 Spanish
-- 🇮🇹 Italian
-- 🇨🇳 Chinese
-- 🇯🇵 Japanese
-- 🇧🇷 Portuguese (Brazil)
-- 🇰🇷 Korean
+- 🇺🇸 English, 🇷🇺 Russian, 🇩🇪 German, 🇫🇷 French, 🇪🇸 Spanish
+- 🇮🇹 Italian, 🇨🇳 Chinese, 🇯🇵 Japanese, 🇧🇷 Portuguese (Brazil), 🇰🇷 Korean
 
 ### Tools
+- 📥 CSV import/export with auto-backup — **PRO**
+- ✏️ Batch edit — **PRO**
 - 📝 RTL support
 - 📋 One-click copy to clipboard
-- 🎨 Modern, intuitive interface with dark/light theme
+- 🎨 Modern, intuitive interface
+
+---
+
+## 💰 Pricing
+
+**Lifetime PRO — $49 / ₽4 900 / €49** (one-time payment)
+
+- ✅ Unlimited links & shortcodes
+- ✅ Password protection
+- ✅ Batch editing
+- ✅ CSV import & export
+- ✅ Lifetime updates & support
+- ✅ 14-day money-back guarantee
+
+[**Get PRO Now →**](https://gataurus.github.io/link-reactor/#pricing)
 
 ---
 
@@ -71,25 +84,9 @@ Link Reactor is a comprehensive WordPress plugin for managing redirect links and
 
 ---
 
-## 🌍 Language Support
-
-Link Reactor speaks your language! Available in:
-- 🇺🇸 English (default)
-- 🇷🇺 Russian
-- 🇩🇪 German
-- 🇫🇷 French
-- 🇪🇸 Spanish
-- 🇮🇹 Italian
-- 🇨🇳 Chinese
-- 🇯🇵 Japanese
-- 🇧🇷 Portuguese (Brazil)
-- 🇰🇷 Korean
-
----
-
 ## 📧 Support
 
-Need help? Contact us at [linkforge.support@gmail.com](mailto:linkforge.support@gmail.com)
+Need help? Contact us at [linkreactor.pro@gmail.com](mailto:linkreactor.pro@gmail.com)
 
 ---
 
@@ -109,4 +106,4 @@ GNU General Public License v2.0 — see [LICENSE](LICENSE)
 
 ---
 
-**Developed by [gataurus](https://github.com/gataurus)
+**Developed by [gataurus](https://github.com/gataurus)**
