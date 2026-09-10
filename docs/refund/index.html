@@ -15,15 +15,23 @@
         .doc-content p, .doc-content li { color: var(--text-secondary); margin-bottom: 10px; line-height: 1.7; font-size: 14px; }
         .doc-content ul { padding-left: 20px; margin-bottom: 16px; }
         .doc-content a { color: var(--orange); text-decoration: none; }
+        .doc-content a:hover { text-decoration: underline; }
         .lang-block { display: none; }
         .lang-block.active { display: block; }
         .back-link { display: inline-block; margin-bottom: 20px; color: var(--orange); text-decoration: none; font-size: 14px; }
+        .back-link:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <a href="../../" class="logo"><span class="logo-icon">⚒️</span><span class="logo-text">Link Reactor</span></a>
+            <a href="../../" class="logo">
+                <svg width="24" height="24" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M55 10 L25 55 L45 55 L40 90 L75 45 L55 45 Z" fill="#f97316"/>
+                    <circle cx="50" cy="50" r="35" stroke="#f97316" stroke-width="2" opacity="0.3"/>
+                </svg>
+                <span class="logo-text">Link Reactor</span>
+            </a>
             <nav class="nav">
                 <div class="lang-switcher">
                     <select id="lang-select" onchange="switchLang(this.value)">
@@ -40,28 +48,28 @@
         
         <div class="lang-block active" data-lang="en">
             <h2>1. Refund Period</h2><p>We offer a <strong>14-day money-back guarantee</strong> from the date of purchase. If you are not satisfied with Link Reactor PRO for any reason, you may request a full refund within 14 days of your purchase.</p>
-            <h2>2. How to Request a Refund</h2><p>To request a refund, please <a href="../contact">contact us</a> with your license key and the email address used for purchase.</p>
+            <h2>2. How to Request a Refund</h2><p>To request a refund, please <a href="../contact/">contact us</a> with your license key and the email address used for purchase.</p>
             <h2>3. Refund Processing</h2><p>Once approved, the refund will be processed within 7 business days. Upon refund, your license key will be permanently deactivated.</p>
             <h2>4. Exceptions</h2><p>Refunds are not available after the 14-day period has expired. Refunds are not available for license renewals.</p>
-            <h2>5. Contact</h2><p>For any questions, please <a href="../contact">use our contact form</a>.</p>
+            <h2>5. Contact</h2><p>For any questions, please <a href="../contact/">use our contact form</a>.</p>
         </div>
         
         <div class="lang-block" data-lang="ru">
             <h2>1. Срок возврата</h2><p>Мы предлагаем <strong>14-дневную гарантию возврата денег</strong> с даты покупки. Если вы не удовлетворены Link Reactor PRO по любой причине, вы можете запросить полный возврат в течение 14 дней.</p>
-            <h2>2. Как запросить возврат</h2><p>Для запроса возврата, пожалуйста, <a href="../contact">свяжитесь с нами</a>, указав лицензионный ключ и email, использованный при покупке.</p>
+            <h2>2. Как запросить возврат</h2><p>Для запроса возврата, пожалуйста, <a href="../contact/">свяжитесь с нами</a>, указав лицензионный ключ и email, использованный при покупке.</p>
             <h2>3. Обработка возврата</h2><p>После одобрения возврат будет обработан в течение 7 рабочих дней. После возврата лицензионный ключ будет деактивирован.</p>
             <h2>4. Исключения</h2><p>Возвраты недоступны по истечении 14-дневного срока. Возвраты не производятся для продления лицензии.</p>
-            <h2>5. Контакты</h2><p>По всем вопросам, пожалуйста, <a href="../contact">используйте нашу контактную форму</a>.</p>
+            <h2>5. Контакты</h2><p>По всем вопросам, пожалуйста, <a href="../contact/">используйте нашу контактную форму</a>.</p>
         </div>
         
-        <div class="lang-block" data-lang="de"><h2>1. Rückgabefrist</h2><p><strong>14-tägige Geld-zurück-Garantie</strong> ab Kaufdatum.</p><h2>2. Rückgabe anfordern</h2><p>Bitte <a href="../contact">kontaktieren Sie uns</a> mit Lizenzschlüssel und Kauf-E-Mail.</p><h2>3. Bearbeitung</h2><p>Rückerstattung innerhalb von 7 Werktagen. Lizenzschlüssel wird deaktiviert.</p><h2>4. Ausnahmen</h2><p>Keine Rückerstattung nach 14 Tagen oder für Verlängerungen.</p><h2>5. Kontakt</h2><p><a href="../contact">Nutzen Sie unser Kontaktformular</a>.</p></div>
-        <div class="lang-block" data-lang="fr"><h2>1. Délai</h2><p><strong>Garantie de remboursement de 14 jours</strong> à compter de la date d'achat.</p><h2>2. Demande</h2><p>Veuillez <a href="../contact">nous contacter</a> avec votre clé de licence et l'email d'achat.</p><h2>3. Traitement</h2><p>Remboursement sous 7 jours ouvrés. La clé sera désactivée.</p><h2>4. Exceptions</h2><p>Pas de remboursement après 14 jours ou pour les renouvellements.</p><h2>5. Contact</h2><p><a href="../contact">Utilisez notre formulaire de contact</a>.</p></div>
-        <div class="lang-block" data-lang="es"><h2>1. Período</h2><p><strong>Garantía de devolución de 14 días</strong> desde la fecha de compra.</p><h2>2. Solicitud</h2><p>Por favor <a href="../contact">contáctenos</a> con su clave de licencia y email de compra.</p><h2>3. Procesamiento</h2><p>Reembolso en 7 días hábiles. La clave será desactivada.</p><h2>4. Excepciones</h2><p>No hay reembolso después de 14 días o para renovaciones.</p><h2>5. Contacto</h2><p><a href="../contact">Use nuestro formulario de contacto</a>.</p></div>
-        <div class="lang-block" data-lang="it"><h2>1. Periodo</h2><p><strong>Garanzia di rimborso di 14 giorni</strong> dalla data di acquisto.</p><h2>2. Richiesta</h2><p>Per favore <a href="../contact">contattaci</a> con la tua chiave di licenza e l'email di acquisto.</p><h2>3. Elaborazione</h2><p>Rimborso entro 7 giorni lavorativi. La chiave verrà disattivata.</p><h2>4. Eccezioni</h2><p>Nessun rimborso dopo 14 giorni o per rinnovi.</p><h2>5. Contatti</h2><p><a href="../contact">Usa il nostro modulo di contatto</a>.</p></div>
-        <div class="lang-block" data-lang="zh"><h2>1. 期限</h2><p>自购买之日起<strong>14天退款保证</strong>。</p><h2>2. 申请</h2><p>请<a href="../contact">联系我们</a>，提供许可证密钥和购买邮箱。</p><h2>3. 处理</h2><p>7个工作日内退款。密钥将被停用。</p><h2>4. 例外</h2><p>14天后或续期不退款。</p><h2>5. 联系方式</h2><p><a href="../contact">请使用我们的联系表单</a>。</p></div>
-        <div class="lang-block" data-lang="ja"><h2>1. 期間</h2><p>購入日から<strong>14日間の返金保証</strong>。</p><h2>2. リクエスト</h2><p>ライセンスキーと購入メールを添えて<a href="../contact">お問い合わせ</a>ください。</p><h2>3. 処理</h2><p>7営業日以内に返金。キーは無効化されます。</p><h2>4. 例外</h2><p>14日経過後または更新の返金はありません。</p><h2>5. お問い合わせ</h2><p><a href="../contact">お問い合わせフォームをご利用ください</a>。</p></div>
-        <div class="lang-block" data-lang="pt"><h2>1. Período</h2><p><strong>Garantia de reembolso de 14 dias</strong> a partir da data da compra.</p><h2>2. Solicitação</h2><p>Por favor <a href="../contact">entre em contato</a> com sua chave de licença e email da compra.</p><h2>3. Processamento</h2><p>Reembolso em até 7 dias úteis. A chave será desativada.</p><h2>4. Exceções</h2><p>Sem reembolso após 14 dias ou para renovações.</p><h2>5. Contato</h2><p><a href="../contact">Use nosso formulário de contato</a>.</p></div>
-        <div class="lang-block" data-lang="ko"><h2>1. 기간</h2><p>구매일로부터 <strong>14일 환불 보증</strong>.</p><h2>2. 요청</h2><p>라이선스 키와 구매 이메일을 <a href="../contact">문의해 주세요</a>.</p><h2>3. 처리</h2><p>영업일 기준 7일 이내 환불. 키는 비활성화됩니다.</p><h2>4. 예외</h2><p>14일 경과 후 또는 갱신 건은 환불되지 않습니다.</p><h2>5. 연락처</h2><p><a href="../contact">문의 양식을 이용해 주세요</a>.</p></div>
+        <div class="lang-block" data-lang="de"><h2>1. Rückgabefrist</h2><p><strong>14-tägige Geld-zurück-Garantie</strong> ab Kaufdatum.</p><h2>2. Rückgabe anfordern</h2><p>Bitte <a href="../contact/">kontaktieren Sie uns</a> mit Lizenzschlüssel und Kauf-E-Mail.</p><h2>3. Bearbeitung</h2><p>Rückerstattung innerhalb von 7 Werktagen. Lizenzschlüssel wird deaktiviert.</p><h2>4. Ausnahmen</h2><p>Keine Rückerstattung nach 14 Tagen oder für Verlängerungen.</p><h2>5. Kontakt</h2><p><a href="../contact/">Nutzen Sie unser Kontaktformular</a>.</p></div>
+        <div class="lang-block" data-lang="fr"><h2>1. Délai</h2><p><strong>Garantie de remboursement de 14 jours</strong> à compter de la date d'achat.</p><h2>2. Demande</h2><p>Veuillez <a href="../contact/">nous contacter</a> avec votre clé de licence et l'email d'achat.</p><h2>3. Traitement</h2><p>Remboursement sous 7 jours ouvrés. La clé sera désactivée.</p><h2>4. Exceptions</h2><p>Pas de remboursement après 14 jours ou pour les renouvellements.</p><h2>5. Contact</h2><p><a href="../contact/">Utilisez notre formulaire de contact</a>.</p></div>
+        <div class="lang-block" data-lang="es"><h2>1. Período</h2><p><strong>Garantía de devolución de 14 días</strong> desde la fecha de compra.</p><h2>2. Solicitud</h2><p>Por favor <a href="../contact/">contáctenos</a> con su clave de licencia y email de compra.</p><h2>3. Procesamiento</h2><p>Reembolso en 7 días hábiles. La clave será desactivada.</p><h2>4. Excepciones</h2><p>No hay reembolso después de 14 días o para renovaciones.</p><h2>5. Contacto</h2><p><a href="../contact/">Use nuestro formulario de contacto</a>.</p></div>
+        <div class="lang-block" data-lang="it"><h2>1. Periodo</h2><p><strong>Garanzia di rimborso di 14 giorni</strong> dalla data di acquisto.</p><h2>2. Richiesta</h2><p>Per favore <a href="../contact/">contattaci</a> con la tua chiave di licenza e l'email di acquisto.</p><h2>3. Elaborazione</h2><p>Rimborso entro 7 giorni lavorativi. La chiave verrà disattivata.</p><h2>4. Eccezioni</h2><p>Nessun rimborso dopo 14 giorni o per rinnovi.</p><h2>5. Contatti</h2><p><a href="../contact/">Usa il nostro modulo di contatto</a>.</p></div>
+        <div class="lang-block" data-lang="zh"><h2>1. 期限</h2><p>自购买之日起<strong>14天退款保证</strong>。</p><h2>2. 申请</h2><p>请<a href="../contact/">联系我们</a>，提供许可证密钥和购买邮箱。</p><h2>3. 处理</h2><p>7个工作日内退款。密钥将被停用。</p><h2>4. 例外</h2><p>14天后或续期不退款。</p><h2>5. 联系方式</h2><p><a href="../contact/">请使用我们的联系表单</a>。</p></div>
+        <div class="lang-block" data-lang="ja"><h2>1. 期間</h2><p>購入日から<strong>14日間の返金保証</strong>。</p><h2>2. リクエスト</h2><p>ライセンスキーと購入メールを添えて<a href="../contact/">お問い合わせ</a>ください。</p><h2>3. 処理</h2><p>7営業日以内に返金。キーは無効化されます。</p><h2>4. 例外</h2><p>14日経過後または更新の返金はありません。</p><h2>5. お問い合わせ</h2><p><a href="../contact/">お問い合わせフォームをご利用ください</a>。</p></div>
+        <div class="lang-block" data-lang="pt"><h2>1. Período</h2><p><strong>Garantia de reembolso de 14 dias</strong> a partir da data da compra.</p><h2>2. Solicitação</h2><p>Por favor <a href="../contact/">entre em contato</a> com sua chave de licença e email da compra.</p><h2>3. Processamento</h2><p>Reembolso em até 7 dias úteis. A chave será desativada.</p><h2>4. Exceções</h2><p>Sem reembolso após 14 dias ou para renovações.</p><h2>5. Contato</h2><p><a href="../contact/">Use nosso formulário de contato</a>.</p></div>
+        <div class="lang-block" data-lang="ko"><h2>1. 기간</h2><p>구매일로부터 <strong>14일 환불 보증</strong>.</p><h2>2. 요청</h2><p>라이선스 키와 구매 이메일을 <a href="../contact/">문의해 주세요</a>.</p><h2>3. 처리</h2><p>영업일 기준 7일 이내 환불. 키는 비활성화됩니다.</p><h2>4. 예외</h2><p>14일 경과 후 또는 갱신 건은 환불되지 않습니다.</p><h2>5. 연락처</h2><p><a href="../contact/">문의 양식을 이용해 주세요</a>.</p></div>
     </div>
     
     <script>
@@ -78,15 +86,18 @@
             ko: { back: "← Link Reactor로 돌아가기", title: "환불 정책" }
         };
         function switchLang(lang) {
-            document.getElementById('lang-select').value = lang;
+            var sel = document.getElementById('lang-select');
+            if (sel) sel.value = lang;
             document.querySelectorAll('.lang-block').forEach(function(b) { b.classList.remove('active'); });
             var block = document.querySelector('.lang-block[data-lang="' + lang + '"]');
             if (block) block.classList.add('active');
             document.documentElement.lang = lang;
             localStorage.setItem('reactor_lang', lang);
+            var backEl = document.querySelector('[data-lang-key="back"]');
+            var titleEl = document.querySelector('[data-lang-key="title"]');
             if (DOC_LANG[lang]) {
-                document.querySelector('[data-lang-key="back"]').textContent = DOC_LANG[lang].back;
-                document.querySelector('[data-lang-key="title"]').textContent = DOC_LANG[lang].title;
+                if (backEl) backEl.textContent = DOC_LANG[lang].back;
+                if (titleEl) titleEl.textContent = DOC_LANG[lang].title;
             }
         }
         (function() {
