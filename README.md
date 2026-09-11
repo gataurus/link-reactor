@@ -86,7 +86,7 @@ Link Reactor is a comprehensive WordPress plugin for managing redirect links and
 
 ## 📧 Support
 
-Need help? Contact us at [linkreactor.pro@gmail.com](mailto:linkreactor.pro@gmail.com)
+Need help? [Open an issue](https://github.com/gataurus/link-reactor/issues) or use the [contact form](https://gataurus.github.io/link-reactor/docs/contact/) on our website.
 
 ---
 
