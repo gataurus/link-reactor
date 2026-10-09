@@ -19,13 +19,37 @@ Link Reactor is a comprehensive WordPress plugin for managing redirect links and
 
 ---
 
+## 📊 Free vs PRO
+
+| Feature | Free | PRO |
+|---|:---:|:---:|
+| Unlimited links | ✅ | ✅ |
+| Unlimited shortcodes | ✅ | ✅ |
+| Click tracking with counter | ✅ | ✅ |
+| Detailed click logs (IP, UA, referrer) | ✅ | ✅ |
+| Live search & category filter | ✅ | ✅ |
+| Editor button (Classic + Gutenberg) | ✅ | ✅ |
+| Shortcode blocks with `[reactor]` | ✅ | ✅ |
+| 10 languages | ✅ | ✅ |
+| RTL support + dark mode | ✅ | ✅ |
+| **Advanced click analytics** (charts, KPI, breakdown, CSV) | ❌ | ✅ |
+| **A/B testing** with sticky cookies | ❌ | ✅ |
+| **Link expiration** with fallback URLs | ❌ | ✅ |
+| **Device targeting** (iOS / Android / Desktop) | ❌ | ✅ |
+| **Password protection** | ❌ | ✅ |
+| **Batch edit** | ❌ | ✅ |
+| **CSV import & export** | ❌ | ✅ |
+| **Lifetime updates & support** | ❌ | ✅ |
+
+---
+
 ## 🚀 Features
 
 ### Advanced Link Management
-- 📊 **Advanced Click Analytics** — Interactive charts, KPI cards (total/today/top/avg), top-10 links, device & browser breakdown, CSV export
-- 🧪 **A/B Testing** — Split traffic between multiple URLs with weighted distribution. Sticky cookies keep each visitor on the same variant
-- ⏳ **Link Expiration** — Set expiration dates with custom fallback URLs and configurable HTTP codes (301, 302, 307)
-- 📱 **Device Targeting** — Route visitors to different URLs by device: iOS, Android, Desktop, or fallback
+- 📊 **Advanced Click Analytics** — Interactive charts, KPI cards (total/today/top/avg), top-10 links, device & browser breakdown, CSV export — **PRO**
+- 🧪 **A/B Testing** — Split traffic between multiple URLs with weighted distribution. Sticky cookies keep each visitor on the same variant — **PRO**
+- ⏳ **Link Expiration** — Set expiration dates with custom fallback URLs and configurable HTTP codes (301, 302, 307) — **PRO**
+- 📱 **Device Targeting** — Route visitors to different URLs by device: iOS, Android, Desktop, or fallback — **PRO**
 - 🔄 301, 302, 307 redirects with custom URL prefixes per link
 - 🎯 Remove prefix entirely for short clean URLs (`yoursite.com/sale`)
 - 📈 Click tracking with counter and detailed logs (IP, user-agent, referrer, device)
@@ -94,7 +118,7 @@ Link Reactor is a comprehensive WordPress plugin for managing redirect links and
 
 ## 🎯 Quick Examples
 
-### Create a short link
+### Create a short link (Free & PRO)
 1. Go to Link Reactor → Links
 2. Click "+ Create New Link"
 3. Enter key: `sale`
@@ -103,19 +127,25 @@ Link Reactor is a comprehensive WordPress plugin for managing redirect links and
 
 Your link: `yoursite.com/go/sale`
 
-### Set up A/B testing
+### Set up A/B testing (PRO)
 1. Create or edit a link
 2. Enable "A/B testing"
 3. Add 2+ variants with URLs and weights (total = 100%)
 4. Save — traffic is split by weight
 
-### Set up device targeting
+### Set up device targeting (PRO)
 1. Create or edit a link
 2. Enable "Device targeting"
 3. Enter URLs for iOS, Android, Desktop, and/or Fallback
 4. Save — visitors are routed by device
 
-### Add a shortcode block
+### Set up link expiration (PRO)
+1. Create or edit a link
+2. Set "Expiration date"
+3. Optionally set a "Fallback URL" for after expiration
+4. Save — after the date, the link redirects to fallback or shows "Link Expired"
+
+### Add a shortcode block (Free & PRO)
 1. Go to Link Reactor → Shortcodes
 2. Click "+ Add Shortcode"
 3. Enter title and paste your HTML/JS/CSS
