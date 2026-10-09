@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Link Reactor — WordPress Plugin</title>
-    <meta name="description" content="Fuel your links. Power your shortcodes. Professional link management and shortcode plugin for WordPress. Redirect, track, cloak URLs, and embed code snippets.">
+    <meta name="description" content="Fuel your links. Power your shortcodes. Professional link management with advanced analytics, A/B testing, link expiration, and device targeting for WordPress.">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
     <link rel="apple-touch-icon" sizes="512x512" href="img/icon-512x512.png">
@@ -93,7 +93,7 @@
                     <div class="how-icon">🔗</div>
                     <div class="how-content">
                         <h3 data-i18n="how_links_title">Link Management</h3>
-                        <p data-i18n="how_links_desc">You have a long, ugly affiliate link or a complicated URL. Link Reactor creates a short, clean version on your own domain. When someone clicks it, they're instantly redirected. Track clicks, protect with a password, or disable anytime — with or without a prefix.</p>
+                        <p data-i18n="how_links_desc">You have a long, ugly affiliate link or a complicated URL. Link Reactor creates a short, clean version on your own domain. When someone clicks it, they're instantly redirected. Track clicks, protect with a password, expire after a date, or split traffic between multiple URLs — with or without a prefix.</p>
                         <div class="how-example">
                             <span class="how-code full">https://shop.com/ref?id=123&utm=abc</span>
                             <span class="how-arrow">→</span>
@@ -125,8 +125,12 @@
                 <h2 data-i18n="features_title">Features</h2>
             </div>
             <div class="features-grid">
+                <div class="feature-card"><span class="feature-icon">📊</span><h3 data-i18n="feature_analytics_title">Advanced Analytics</h3><p data-i18n="feature_analytics_desc">Interactive charts with daily clicks, KPI cards, top-10 links, device & browser breakdown, and CSV export.</p></div>
+                <div class="feature-card"><span class="feature-icon">🧪</span><h3 data-i18n="feature_ab_title">A/B Testing</h3><p data-i18n="feature_ab_desc">Split traffic between multiple URLs with weighted distribution. Sticky cookies keep each visitor on the same variant.</p></div>
+                <div class="feature-card"><span class="feature-icon">⏳</span><h3 data-i18n="feature_expiry_title">Link Expiration</h3><p data-i18n="feature_expiry_desc">Set expiration dates with custom fallback URLs. Choose HTTP code for expired links (301, 302, 307).</p></div>
+                <div class="feature-card"><span class="feature-icon">📱</span><h3 data-i18n="feature_device_title">Device Targeting</h3><p data-i18n="feature_device_desc">Route visitors to different URLs by device: iOS, Android, Desktop, or fallback for other devices.</p></div>
                 <div class="feature-card"><span class="feature-icon">🔄</span><h3 data-i18n="feature_1_title">Smart Redirects</h3><p data-i18n="feature_1_desc">301, 302, or 307 redirects with custom prefixes per link. Remove prefix entirely for short clean URLs.</p></div>
-                <div class="feature-card"><span class="feature-icon">📊</span><h3 data-i18n="feature_2_title">Click Tracking</h3><p data-i18n="feature_2_desc">Every click logged: time, IP, browser, device, referrer. View counters in dashboard.</p></div>
+                <div class="feature-card"><span class="feature-icon">📈</span><h3 data-i18n="feature_2_title">Click Tracking</h3><p data-i18n="feature_2_desc">Every click logged: time, IP, browser, device, referrer. View counters in dashboard.</p></div>
                 <div class="feature-card"><span class="feature-icon">🔒</span><h3 data-i18n="feature_3_title">Password Protection</h3><p data-i18n="feature_3_desc">Protect links with a password. Clean password page before redirect. PRO feature.</p></div>
                 <div class="feature-card"><span class="feature-icon">🧱</span><h3 data-i18n="feature_4_title">Shortcode Blocks</h3><p data-i18n="feature_4_desc">Store HTML/JS/CSS snippets. Insert anywhere via shortcode or editor button.</p></div>
                 <div class="feature-card"><span class="feature-icon">🔍</span><h3 data-i18n="feature_5_title">Live Search & Editor</h3><p data-i18n="feature_5_desc">Instant search across links and shortcodes. Insert with one click from the post editor.</p></div>
@@ -158,13 +162,17 @@
 
                         <div class="pricing-amount">
                             <span class="pricing-currency" data-i18n="price_currency">$</span>
-                            <span class="pricing-number" data-i18n="price_lifetime">49</span>
+                            <span class="pricing-number" data-i18n="price_lifetime">89</span>
                             <span class="pricing-period" data-i18n="price_period">/ forever</span>
                         </div>
 
                         <div class="pricing-features-grid">
                             <div class="pricing-feature"><span class="pricing-feature-icon">✓</span><span data-i18n="p_feat_unlim_links">Unlimited links</span></div>
                             <div class="pricing-feature"><span class="pricing-feature-icon">✓</span><span data-i18n="p_feat_unlim_blocks">Unlimited shortcodes</span></div>
+                            <div class="pricing-feature"><span class="pricing-feature-icon">✓</span><span data-i18n="p_feat_analytics">Advanced analytics</span></div>
+                            <div class="pricing-feature"><span class="pricing-feature-icon">✓</span><span data-i18n="p_feat_ab">A/B testing</span></div>
+                            <div class="pricing-feature"><span class="pricing-feature-icon">✓</span><span data-i18n="p_feat_expiry">Link expiration</span></div>
+                            <div class="pricing-feature"><span class="pricing-feature-icon">✓</span><span data-i18n="p_feat_device">Device targeting</span></div>
                             <div class="pricing-feature"><span class="pricing-feature-icon">✓</span><span data-i18n="p_feat_batch">Batch editing</span></div>
                             <div class="pricing-feature"><span class="pricing-feature-icon">✓</span><span data-i18n="p_feat_csv">CSV import & export</span></div>
                             <div class="pricing-feature"><span class="pricing-feature-icon">✓</span><span data-i18n="p_feat_pass">Password protection</span></div>
@@ -212,6 +220,10 @@
                 <details><summary data-i18n="faq_4_q">One license per site?</summary><p data-i18n="faq_4_a">Yes, one license = one domain. Need more sites? Buy additional licenses.</p></details>
                 <details><summary data-i18n="faq_5_q">How do links work?</summary><p data-i18n="faq_5_a">You create a key (like "sale") and a target URL. The plugin creates yoursite.com/go/sale — anyone who visits it is redirected. Track clicks or protect with a password.</p></details>
                 <details><summary data-i18n="faq_6_q">How do shortcodes work?</summary><p data-i18n="faq_6_a">Create a block with a title and your code. Use [reactor block="title"] in any post or page. Edit once — changes everywhere. Or use the editor button for one-click insertion.</p></details>
+                <details><summary data-i18n="faq_9_q">What is A/B testing?</summary><p data-i18n="faq_9_a">Split traffic between two or more URLs with weighted distribution. Each visitor consistently sees the same variant (sticky cookie). Perfect for testing landing pages, offers, or affiliate links.</p></details>
+                <details><summary data-i18n="faq_10_q">How does link expiration work?</summary><p data-i18n="faq_10_a">Set an expiration date per link. After that date, the link either redirects to a custom fallback URL or shows a built-in "Link Expired" page. Great for time-limited promotions.</p></details>
+                <details><summary data-i18n="faq_11_q">What is device targeting?</summary><p data-i18n="faq_11_a">Route visitors to different URLs based on their device — iOS, Android, Desktop, or fallback for other devices. Useful for app stores, mobile-optimized pages, or A/B testing by device.</p></details>
+                <details><summary data-i18n="faq_12_q">What analytics does PRO include?</summary><p data-i18n="faq_12_a">Interactive charts with daily clicks, KPI cards (total/today/top/avg), device and browser breakdown, top-10 links, and CSV export for raw clicks and daily summaries.</p></details>
                 <details><summary data-i18n="faq_7_q">What happens when license expires?</summary><p data-i18n="faq_7_a">We don't have subscriptions. License is valid forever. Pay once, use forever.</p></details>
                 <details><summary data-i18n="faq_8_q">Do you offer refunds?</summary><p data-i18n-html="faq_8_a">Yes, 14-day money-back guarantee. <a href='docs/contact/'>Contact us</a> — we'll refund, no questions asked.</p></details>
             </div>
