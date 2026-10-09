@@ -13,20 +13,24 @@
 
 ## 🔗 What is Link Reactor?
 
-Link Reactor is a comprehensive WordPress plugin for managing redirect links and shortcode blocks. Create clean, trackable links, cloak affiliate URLs, and embed custom code snippets with an intuitive modern interface.
+Link Reactor is a comprehensive WordPress plugin for managing redirect links and shortcode blocks. Create clean, trackable links, cloak affiliate URLs, run A/B tests, target devices, and embed custom code snippets — all from an intuitive modern interface.
 
-**Free version** available on WordPress.org. **PRO version** unlocks password protection, batch operations, CSV import/export, and lifetime updates.
+**Free version** available on WordPress.org. **PRO version** unlocks advanced analytics, A/B testing, link expiration, device targeting, password protection, batch operations, and CSV import/export.
 
 ---
 
 ## 🚀 Features
 
-### Link Management
-- 🔄 301, 302, 307 redirects
-- 🎯 Custom URL prefixes per link
-- 📊 Click tracking with counter and detailed logs (IP, user-agent, referrer)
-- 📋 Bulk actions (delete, toggle, change category) — **PRO**
+### Advanced Link Management
+- 📊 **Advanced Click Analytics** — Interactive charts, KPI cards (total/today/top/avg), top-10 links, device & browser breakdown, CSV export
+- 🧪 **A/B Testing** — Split traffic between multiple URLs with weighted distribution. Sticky cookies keep each visitor on the same variant
+- ⏳ **Link Expiration** — Set expiration dates with custom fallback URLs and configurable HTTP codes (301, 302, 307)
+- 📱 **Device Targeting** — Route visitors to different URLs by device: iOS, Android, Desktop, or fallback
+- 🔄 301, 302, 307 redirects with custom URL prefixes per link
+- 🎯 Remove prefix entirely for short clean URLs (`yoursite.com/sale`)
+- 📈 Click tracking with counter and detailed logs (IP, user-agent, referrer, device)
 - 🔒 Password protection for links — **PRO**
+- 📋 Bulk actions (delete, toggle, change category) — **PRO**
 - 🔍 Live search and category filtering
 - 📱 Responsive management table with infinite scroll
 
@@ -47,15 +51,19 @@ Link Reactor is a comprehensive WordPress plugin for managing redirect links and
 - ✏️ Batch edit — **PRO**
 - 📝 RTL support
 - 📋 One-click copy to clipboard
-- 🎨 Modern, intuitive interface
+- 🎨 Modern, intuitive interface with dark mode
 
 ---
 
 ## 💰 Pricing
 
-**Lifetime PRO — $49 / ₽4 900 / €49** (one-time payment)
+**Lifetime PRO — $89 / ₽7 990 / €79 / ¥649 / ¥12 900 / R$449 / ₩119 000** (one-time payment)
 
 - ✅ Unlimited links & shortcodes
+- ✅ **Advanced click analytics** (charts, KPI, breakdown, CSV export)
+- ✅ **A/B testing** with sticky cookies
+- ✅ **Link expiration** with fallback URLs
+- ✅ **Device targeting** (iOS / Android / Desktop / Other)
 - ✅ Password protection
 - ✅ Batch editing
 - ✅ CSV import & export
@@ -81,6 +89,38 @@ Link Reactor is a comprehensive WordPress plugin for managing redirect links and
 - WordPress 5.3 or higher
 - PHP 7.4 or higher
 - Modern browser (Chrome, Firefox, Safari, Edge)
+
+---
+
+## 🎯 Quick Examples
+
+### Create a short link
+1. Go to Link Reactor → Links
+2. Click "+ Create New Link"
+3. Enter key: `sale`
+4. Enter target: `https://shop.com/checkout`
+5. Click "Create Link"
+
+Your link: `yoursite.com/go/sale`
+
+### Set up A/B testing
+1. Create or edit a link
+2. Enable "A/B testing"
+3. Add 2+ variants with URLs and weights (total = 100%)
+4. Save — traffic is split by weight
+
+### Set up device targeting
+1. Create or edit a link
+2. Enable "Device targeting"
+3. Enter URLs for iOS, Android, Desktop, and/or Fallback
+4. Save — visitors are routed by device
+
+### Add a shortcode block
+1. Go to Link Reactor → Shortcodes
+2. Click "+ Add Shortcode"
+3. Enter title and paste your HTML/JS/CSS
+4. Copy generated shortcode `[reactor block="slug"]`
+5. Paste it anywhere in posts, pages, or widgets
 
 ---
 
