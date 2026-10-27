@@ -58,8 +58,7 @@ Take your link management to the next level with advanced analytics, testing too
 
 | Feature | 🆓 Free | ⚡ PRO |
 |---------|---------|---------|
-| **20 links & 20 shortcodes** | ✅ | ❌ |
-| **Unlimited links & shortcodes** | ❌ | ✅ |
+| **Unlimited links & shortcodes** | ✅ | ✅ |
 | Click tracking & detailed logs | ✅ | ✅ |
 | Live search & category filter | ✅ | ✅ |
 | Editor button (Classic + Gutenberg) | ✅ | ✅ |
