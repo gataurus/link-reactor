@@ -2,7 +2,7 @@
 
 **Fuel your links. Power your shortcodes. Redirect, track, and manage URLs — all from one powerful dashboard.**
 
-[![Download](https://img.shields.io/badge/download-v1.0.0-blue.svg)](https://github.com/gataurus/link-reactor/releases/latest)
+[![Download](https://img.shields.io/badge/download-v1.0.1-blue.svg)](https://github.com/gataurus/link-reactor/releases/latest)
 [![WP Directory](https://img.shields.io/badge/WordPress-Directory-brightgreen.svg)](https://wordpress.org/plugins/link-reactor)
 [![License](https://img.shields.io/badge/license-GPL%20v2-green.svg)](LICENSE)
 [![PHP](https://img.shields.io/badge/PHP-7.4+-purple.svg)](https://php.net)
@@ -30,9 +30,23 @@ Full feature list: [link-reactor.com](https://link-reactor.com/)
 
 ---
 
+## 🆕 What's new in v1.0.1
+
+🔧 **Maintenance release — hardening, speed, and UX polish.**
+- 🛡️ Added permission checks to all admin actions
+- 🔐 Replaced inline JS with safer confirmation dialogs
+- 🚀 Faster redirects — direct key lookup instead of scanning all links
+- 💾 Statistics cached for 5 minutes with automatic refresh
+- 🎨 Theme choice persists across pages
+- 🔒 Data preserved on uninstall — tables and options stay intact
+
+[View full changelog](https://github.com/gataurus/link-reactor/releases/latest)
+
+---
+
 ## 📥 Download
 
-**[Download latest release](https://github.com/gataurus/link-reactor/releases/latest)**
+**[Download latest release (v1.0.1)](https://github.com/gataurus/link-reactor/releases/latest)**
 
 Or install directly from WordPress admin: **Plugins → Add New → search "Link Reactor"**
 
@@ -44,7 +58,8 @@ Take your link management to the next level with advanced analytics, testing too
 
 | Feature | 🆓 Free | ⚡ PRO |
 |---------|---------|---------|
-| Unlimited links & shortcodes | ✅ | ✅ |
+| **20 links & 20 shortcodes** | ✅ | ❌ |
+| **Unlimited links & shortcodes** | ❌ | ✅ |
 | Click tracking & detailed logs | ✅ | ✅ |
 | Live search & category filter | ✅ | ✅ |
 | Editor button (Classic + Gutenberg) | ✅ | ✅ |
